@@ -1,16 +1,29 @@
 .App {
+    padding: 10%;
     background-color: #282c34;
-    height: 100%;
     color: white;
+    height: 100em;
 }
 
 .text-field-email {
     border-radius: 23px;
-    
-
+    background-color: grey;
+    opacity: 0.33;  
 }
+
+.text-field-password {
+    border-radius: 23px;
+    background-color: grey;
+    opacity: 0.33;
+    color: white;
+}
+
+
+
 .Container {
-        display: flex;
-      }
-  
+    display: flex;
+    
+}
+
+
 

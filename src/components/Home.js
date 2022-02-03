@@ -3,7 +3,9 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from './Header.js';
 import Post from './Post.js'
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
@@ -29,19 +31,21 @@ const handleLogout = () => {
     }, [])    
 
     return (
-        <div>
-             <Header />
-             <div class="row">
-                <div className="col-md-3 center">
+        <Container fluid>
+        <Header />
+            <Row>
                  <div>Welcome to Granbook </div>
                      <Post />   
-                     <button onClick={handleLogout}>Log out</button>
-            </div>
-
-            </div>
+                     
+            </Row>
+            <button 
+            style={{  
+            background: "linear-gradient(#ff9900,#ff66cc)" 
+                }}
+            onClick={handleLogout}>Log out</button>
 
 
             
-        </div>
-    )
+        </Container>
+    );
 }
