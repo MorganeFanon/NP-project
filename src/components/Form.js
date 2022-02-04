@@ -1,31 +1,34 @@
 import * as React from 'react';
 import ReactRoundedImage from 'react-rounded-image';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from './Button';
 import './Form.css';
 import LogoGran from  "../images/LogoGran.png";
 import {Link, Route } from 'react-router-dom';
+import Footer from './Footer';
+
 
 
 
 export default function BasicTextFields({ title, setPassword, setEmail, handleAction }) {
     return (
-        <Container fluid>
-            <ReactRoundedImage 
-                
+        <Grid Container 
+            justifyContent="center">
+            
+           
+             <ReactRoundedImage 
                 image={LogoGran}
-                
             />
+            
                 <h3>
                   {title} to Your Account
                 </h3>
                 <br></br>
                 <h4>Welcome to Granbook the social platform for the grannies and grandpas of all other the world</h4>
-        <Row className="row p-3 d-flex jutify-content-center text-center">        
+               
             <Box
             component="form"
             sx={{
@@ -33,12 +36,11 @@ export default function BasicTextFields({ title, setPassword, setEmail, handleAc
             }}
             noValidate
             autoComplete="off"
-            >
-             </Box>
-        </Row> 
+            ></Box>
+             
+         <Stack direction="row" spacing={2} p={6}>
 
-        <Row className=" p-5 row d-flex jutify-content-center text-center">
-            <Col>
+                <Grid item xs={10} md={5} lg={5} >
                 <TextField
                 id="email"
                 className="text-field-email"
@@ -46,9 +48,9 @@ export default function BasicTextFields({ title, setPassword, setEmail, handleAc
                 variant="outlined" 
                 onChange={(e) => setEmail(e.target.value)}
                 />
-            </Col>
+                </Grid>
 
-            <Col>    
+                <Grid item xs={10} md={5} lg={5}>
                 <TextField 
                 id="password" 
                 className="text-field-password"
@@ -56,18 +58,22 @@ export default function BasicTextFields({ title, setPassword, setEmail, handleAc
                 variant="outlined"
                 onChange={(e) => setPassword(e.target.value)}
                 />
-            </Col> 
-        </Row> 
-  
-    
-        
-        <Button title={title} handleAction={handleAction}/>
-      
+                </Grid> 
+        </Stack>
+            
 
-        <br></br>
-        Not an account yet ?<Link to="/register"> Register here</Link>
-        
-      
-      </Container>
+        <Stack direction="column" spacing={3} p={6}>
+                <Grid item > 
+                 <Button title={title} handleAction={handleAction} p={6}/>
+                </Grid>
+           
+                <Grid item>
+              
+                    Not an account yet ?<Link to="/register"> Register here</Link>
+                </Grid>        
+        </Stack>
+
+        <Footer />
+        </Grid>
     );
 }

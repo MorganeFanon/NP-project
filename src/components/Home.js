@@ -1,11 +1,11 @@
 
 import React, { useEffect } from 'react';
-import Button from 'react-bootstrap/Button'
+import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 import Header from './Header.js';
 import Post from './Post.js'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
 import Welcome from './Welcome'
 
 
@@ -32,14 +32,17 @@ const handleLogout = () => {
     }, [])    
 
     return (
-        <Container fluid>
+      <div> 
         <Header />
-            <Row>
-                 <div>Welcome to Granbook </div>
-                 <Welcome />
+        </div>   
+        <Grid container>
+            <Box sx={{ typography: 'Welcome to Granbook' }}></Box>
+    
+            <Welcome />
+               <Grid item>
                      <Post />   
-                     
-            </Row>
+                </Grid>     
+            
             <Button 
             style={{  
             background: "linear-gradient(#ff9900,#ff66cc)" 
@@ -48,6 +51,6 @@ const handleLogout = () => {
 
 
             
-        </Container>
+        </Grid>
     );
 }

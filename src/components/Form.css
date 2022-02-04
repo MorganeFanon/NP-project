@@ -5,20 +5,22 @@
 }
 
 .text-field-email {
+    width: 60%;
     border-radius: 23px;
     background-color: grey;
     opacity: 0.33;  
 }
 
 .text-field-password {
+    width: 60%;
     border-radius: 23px;
     background-color: grey;
     opacity: 0.33;
-    color: white;
 }
 
 .Container {
-    display: flex;
+    display: inline-flex;
+    flex-direction: row;
     
 }
 
