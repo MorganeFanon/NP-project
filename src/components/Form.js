@@ -6,8 +6,11 @@ import Col from 'react-bootstrap/Col';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from './Button';
-import './Form.css'
-import LogoGran from  "../images/LogoGran.png"
+import './Form.css';
+import LogoGran from  "../images/LogoGran.png";
+import {Link, Route } from 'react-router-dom';
+
+
 
 export default function BasicTextFields({ title, setPassword, setEmail, handleAction }) {
     return (
@@ -21,7 +24,7 @@ export default function BasicTextFields({ title, setPassword, setEmail, handleAc
                   {title} to Your Account
                 </h3>
                 <br></br>
-                <h4>Welcome to Granbook</h4>
+                <h4>Welcome to Granbook the social platform for the grannies and grandpas of all other the world</h4>
         <Row className="row p-3 d-flex jutify-content-center text-center">        
             <Box
             component="form"
@@ -61,8 +64,10 @@ export default function BasicTextFields({ title, setPassword, setEmail, handleAc
         <Button title={title} handleAction={handleAction}/>
       
 
-        <div><br></br><h4>Not a member yet ? Register Now</h4></div>
- 
+        <br></br>
+        Not an account yet ?<Link to="/register"> Register here</Link>
+        
+      
       </Container>
     );
 }

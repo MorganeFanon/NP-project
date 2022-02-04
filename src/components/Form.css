@@ -1,5 +1,4 @@
 .App {
-    padding: 10%;
     background-color: #282c34;
     color: white;
     height: 100em;
@@ -17,8 +16,6 @@
     opacity: 0.33;
     color: white;
 }
-
-
 
 .Container {
     display: flex;
