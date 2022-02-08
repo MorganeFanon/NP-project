@@ -3,10 +3,11 @@ import React, { useEffect } from 'react';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 import Header from './Header.js';
-import Post from './Post.js'
+import Post from './Post.js';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Welcome from './Welcome'
+import Stack from '@mui/material/Stack';
+import Welcome from './Welcome';
 
 
 
@@ -32,16 +33,16 @@ const handleLogout = () => {
     }, [])    
 
     return (
-      <div> 
+        <div>
         <Header />
-        </div>   
-        <Grid container>
-            <Box sx={{ typography: 'Welcome to Granbook' }}></Box>
-    
-            <Welcome />
-               <Grid item>
-                     <Post />   
-                </Grid>     
+        
+           
+         <Welcome />  
+            
+           
+         <Grid item><Post /></Grid>  
+            
+               
             
             <Button 
             style={{  
@@ -50,7 +51,6 @@ const handleLogout = () => {
             onClick={handleLogout}>Log out</Button>
 
 
-            
-        </Grid>
+        </div>
     );
 }

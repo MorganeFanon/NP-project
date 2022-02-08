@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import Form from './components/Form';
 import Home from './components/Home';
+import Profile from './components/Profile';
 import {
   Routes,
   Route,
@@ -87,6 +88,12 @@ function App() {
             path='/home'
             element={
               <Home />}
+          />
+
+          <Route
+            path='/profile'
+            element={
+              <Profile />}
           />
         </Routes>
       </>
