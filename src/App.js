@@ -12,6 +12,9 @@ import { app } from './firebase-config';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Header from './components/Header';
+import Feed from './components/Feed';
+import Sidebar from './components/Sidebar';
 
 
 function App() {
@@ -58,7 +61,15 @@ function App() {
     }
   }, [])
   return (
-    <div className="App">
+
+    <div className="app">
+      <Header />
+
+      <div className="app__body">
+          <Sidebar />
+          <Feed />
+       </div> 
+      
       <>
         <ToastContainer />
         <Routes>

@@ -1,53 +1,51 @@
 import React from 'react';
-import "./Header.css";
-import SearchIcon from "@material-ui/icons/Search";
-import HomeIcon from "@material-ui/icons/Home";
-import { Avatar, IconButton } from "@material-ui/core";
-import AddIcon from "@material-ui/icons/Add";
-import ForumIcon from "@material-ui/icons/Forum";
-import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { useStateValue } from './StateProvider';
-import granbook from "../images/LogoGran.png"
+import './Header.css';
+import LogoGran from "../images/LogoGran.png";
+import SearchIcon from '@mui/icons-material/Search';
+import HomeIcon from '@mui/icons-material/Home';
+import Avatar from '@mui/material/Avatar';
+import IconButton from '@mui/material/IconButton';
+
+
 
 function Header() {
+  return <div className="header">
+    <div className="header__left">
+    <img
+        src={LogoGran}
+        alt="Logo"
+       />
 
-    return (
-        <div className="header">
-            <div className="header__left">
-                <img src={granbook} />
-                <div className="header__input">
-                    <SearchIcon />
-                    <input placeholder="search a granny/grandpa" type="text" />
-                </div>
-            </div>
-            <div className="header__center">
-                <div className="header__option header__option--active">
-                    <HomeIcon fontSize="large" />
-                </div>
-                
-            </div>
-            <div className="header__right">
-                <div className="header__info">
-                    <Avatar />
+  <div className="header__input">
+  <IconButton>
+    <SearchIcon />
+  </IconButton>
+    <input type ="text" />
+    </div>
+</div>
+
+    <div className="header__middle">
+    <div className="header__option">
+    <IconButton>
+      <HomeIcon fontSize= "large"  />
+    </IconButton>
+    </div>
+    </div>
+
+    <div className="header__right">
+      <div className="header__info">
+      <IconButton>
+        <Avatar />
+      </IconButton>
+        <h4>Eddy Van Praet</h4>
+      </div>
+
+      
         
-                </div>
+      
 
-                <IconButton>
-                    <AddIcon />
-                </IconButton>
-                <IconButton>
-                    <ForumIcon />
-                </IconButton>
-                <IconButton>
-                    <NotificationsActiveIcon />
-                </IconButton>
-                <IconButton>
-                    <ExpandMoreIcon />
-                </IconButton>
-            </div>
-        </div>
-    )
+    </div>
+  </div>;
 }
 
-export default Header
+export default Header;
