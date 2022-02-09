@@ -3,7 +3,6 @@ import Link from '@mui/material/Link';
 import './Form.css';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
 import './Footer.css';
 
 const Footer = () => {

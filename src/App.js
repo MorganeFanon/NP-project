@@ -15,6 +15,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/Header';
 import Feed from './components/Feed';
 import Sidebar from './components/Sidebar';
+import Logout from './components/Logout';
+
+
+
 
 
 function App() {
@@ -63,13 +67,13 @@ function App() {
   return (
 
     <div className="app">
-      <Header />
-
-      <div className="app__body">
-          <Sidebar />
-          <Feed />
-       </div> 
-      
+         <Header />
+              
+           <div className="app__body">
+               <Sidebar />
+               <Feed />
+                <Logout />
+            </div> 
       <>
         <ToastContainer />
         <Routes>
@@ -98,7 +102,9 @@ function App() {
           <Route
             path='/home'
             element={
-              <Home />}
+              <Home>  
+                  
+               </Home>}
           />
 
           <Route
@@ -108,6 +114,7 @@ function App() {
           />
         </Routes>
       </>
+     
     </div>
   );
 }

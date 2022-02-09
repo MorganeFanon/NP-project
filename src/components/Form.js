@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import Button from './Button';
+import Logout from './Logout';
 import './Form.css';
 import LogoGran from  "../images/LogoGran.png";
 import {Link, Route } from 'react-router-dom';
@@ -64,7 +64,7 @@ export default function BasicTextFields({ title, setPassword, setEmail, handleAc
 
         <Stack direction="column" spacing={3} p={6}>
                 <Grid item > 
-                 <Button title={title} handleAction={handleAction} p={6}/>
+                 <Logout title={title} handleAction={handleAction} p={6}/>
                 </Grid>
            
                 <Grid item>

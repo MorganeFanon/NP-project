@@ -3,9 +3,9 @@ import Story from './Story';
 import './StoryReel.css';
 
 function StoryReel(){
-    return <div classnmae="storyReel">
+    return <div className="storyReel">
         <Story      
-            image= "https://www.bethesdahealth.org/wp-content/uploads/2019/01/iStock-638906934.jpg"
+            image= "https://static.guim.co.uk/sys-images/Education/Pix/pictures/2012/3/29/1333033175066/A-traditionally-clothed-G-008.jpg"
             profileSrc=" "
             title="Bernie Douglas"
             />

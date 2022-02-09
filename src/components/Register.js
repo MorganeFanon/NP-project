@@ -14,8 +14,6 @@ class Register extends Component {
   return (
     
       <Router>
-        
-      
       <Link to ={`${match.url}/register`}>Register now</Link>
       <Form
          title="register"
@@ -23,7 +21,6 @@ class Register extends Component {
          setPassword={setPassword}
          handleAction={() => handleAction(2)}
         />
-        
       </Router>
   
   )

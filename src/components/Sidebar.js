@@ -8,7 +8,7 @@ import ChatIcon from '@material-ui/icons/Chat';
 function Sidebar() {
     return ( 
     <div className="sidebar">
-        <SidebarRow src='' title="Eddy Praet" />
+        <SidebarRow src='' title="Eddy Van Praet" />
         <SidebarRow Icon={EmojiFlagsIcon} title="Pages" />
         <SidebarRow Icon={PeopleIcon} title="Friends" />
         <SidebarRow Icon={ChatIcon} title="Messenger" />

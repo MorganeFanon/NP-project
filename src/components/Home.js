@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
+
 function Home() {
 const handleLogout = () => {
     sessionStorage.removeItem('Auth Token');
@@ -24,7 +25,7 @@ const handleLogout = () => {
 
     return (
         <div>
-        
+            
          
             
         </div>
