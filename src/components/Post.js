@@ -1,6 +1,7 @@
 import { Avatar } from '@material-ui/core';
 import React from 'react';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
+import ChatBubbleOutlineIcon from ''
 import './Post.css';
 
 
