@@ -1,5 +1,6 @@
 import { Avatar } from '@material-ui/core';
 import React from 'react';
+import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import './Post.css';
 
 
@@ -22,6 +23,13 @@ function Post({profilePic, image, username, timestamp, message}) {
     <div className="post__image">
         <img src={image} alt="" />
     </div>
+
+    <div className="post__options">
+        <div className="post__option">
+            <ThumbUpIcon />
+            <p>Like</p>
+        </div>
+     </div>
    </div> 
   )
 }
