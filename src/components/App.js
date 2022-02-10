@@ -1,20 +1,20 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import './App.css';
-import Form from './components/Form';
-import Home from './components/Home';
-import Profile from './components/Profile';
-import Widgets from './components/Widgets';
-import Header from './components/Header';
-import Feed from './components/Feed';
-import Sidebar from './components/Sidebar';
+import Form from './Form';
+import Home from './Home';
+import Profile from './Profile';
+import Widgets from './Widgets';
+import Header from './Header';
+import Feed from './Feed';
+import Sidebar from './Sidebar';
 
 import {
   Routes,
   Route,
   useNavigate
 } from "react-router-dom";
-import { app } from './firebase-config';
+import { app } from '../firebase-config';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -26,6 +26,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
+  /*
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   let navigate = useNavigate();
@@ -68,10 +69,19 @@ function App() {
       navigate('/home')
     }
   }, [])
-  
+  */
+
+
+const user = null;
+
+
   return (
 
     <div className="app">
+      {!user ? (
+        <h1>Login</h1>
+      ) : ( 
+      <>
        <Header />  
 
 
@@ -81,9 +91,12 @@ function App() {
             
             <Widgets />
             </div> 
-          
-      <>
-        <ToastContainer />
+            </>
+      )}
+     </div>
+      
+      /*       
+      <ToastContainer />
         <Routes>
           <Route
             path='/login'
@@ -120,9 +133,8 @@ function App() {
               <Profile />}
           />
         </Routes>
-      </>
-      </div>
-    
+        */ 
+     
   );
 }
 
