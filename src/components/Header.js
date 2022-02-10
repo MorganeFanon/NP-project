@@ -1,14 +1,18 @@
 import React from 'react';
 import './Header.css';
-import LogoGran from "../images/LogoGran.png";
+import LogoGran from "../Assets/LogoGran.png";
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
+import { useStateValue } from './StateProvider';
+
 
 
 
 function Header() {
+const [{ user }, dispatch] = useStateValue();
+
   return <div className="header">
     <div className="header__left">
     <img
@@ -35,9 +39,10 @@ function Header() {
     <div className="header__right">
       <div className="header__info">
       <IconButton>
-        <Avatar />
+        <Avatar src={user.photoURL}/>
+        <h4>{user.displayName}</h4>
       </IconButton>
-        <h4>Eddy Van Praet</h4>
+        
       </div>
 
       

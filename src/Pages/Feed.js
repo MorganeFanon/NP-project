@@ -1,8 +1,8 @@
 import React from 'react';
 import './Feed.css';
-import StoryReel from './StoryReel';
-import MessageSender from './MessageSender';
-import Post from './Post';
+import StoryReel from '../components/StoryReel';
+import MessageSender from '../components/MessageSender';
+import Post from '../components/Post';
 
 
 function Feed() {
