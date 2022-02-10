@@ -4,6 +4,11 @@ import './App.css';
 import Form from './components/Form';
 import Home from './components/Home';
 import Profile from './components/Profile';
+import Widgets from './components/Widgets';
+import Header from './components/Header';
+import Feed from './components/Feed';
+import Sidebar from './components/Sidebar';
+
 import {
   Routes,
   Route,
@@ -13,6 +18,7 @@ import { app } from './firebase-config';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -66,6 +72,16 @@ function App() {
   return (
 
     <div className="app">
+       <Header />  
+
+
+         <div className="app__body">
+            <Sidebar />
+            <Feed />
+            
+            <Widgets />
+            </div> 
+          
       <>
         <ToastContainer />
         <Routes>
@@ -105,8 +121,8 @@ function App() {
           />
         </Routes>
       </>
-     
-    </div>
+      </div>
+    
   );
 }
 

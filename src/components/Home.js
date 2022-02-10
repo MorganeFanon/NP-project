@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Header from './Header';
-import Feed from './Feed';
-import Sidebar from './Sidebar';
-import Logout from './Logout';
+
 
 
 
@@ -29,12 +26,7 @@ const handleLogout = () => {
 
     return (
         <div>
-            <Header />  
-                <div className="app__body">
-               <Sidebar />
-               <Feed />
-                <Logout />
-              </div> 
+         
             
         </div>
     );
