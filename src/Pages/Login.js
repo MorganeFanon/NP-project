@@ -7,13 +7,14 @@ import { actionTypes } from '../components/reducer';
 import { useStateValue } from '../components/StateProvider';
 
 
+
 function Login() {
     const [state, dispatch] = useStateValue();
    
     const signIn = () => {
 
         auth
-            .signInWithPopup(provider)
+            .signInWithPopup(auth, provider)
             .then((result) => {
                 dispatch({
                     type: actionTypes.SET_USER,
