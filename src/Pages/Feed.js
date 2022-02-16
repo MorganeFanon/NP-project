@@ -4,7 +4,7 @@ import StoryReel from '../components/StoryReel';
 import MessageSender from '../components/MessageSender';
 import Post from '../components/Post';
 import { db }  from '../firebase';
-import Dashboard from './Dashboard';
+import Dashboard from '../components/Dashboard';
 
 
 
@@ -19,22 +19,28 @@ function Feed() {
     }, []);
    
     return (
+        
+        
         <div className="feed">
+        <Dashboard />
+        <StoryReel />
+        <MessageSender />
+   
+      
             
-            <StoryReel />
-            <MessageSender />
-            <Dashboard />
+           
+            
 
-            {posts.map((post) => ( 
-            <Post 
-                key={post.id}
-                profilePic={post.profilePic}
-                message={post.message}
-                timestamp={post.timestamp}
-                username={post.username}
-                image={post.image}
+         {posts.map((post) => ( 
+         <Post 
+            key={post.id}
+            profilePic={post.profilePic}
+            message={post.message}
+            timestamp={post.timestamp}
+            username={post.username}
+            image={post.image}
                 />
-            ))}
+            ))} 
         </div>
     );
 }
