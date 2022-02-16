@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Feed.css';
 import StoryReel from '../components/StoryReel';
 import MessageSender from '../components/MessageSender';
 import Post from '../components/Post';
 import { db }  from '../firebase';
+import Dashboard from './Dashboard';
+
 
 
 
@@ -18,8 +20,10 @@ function Feed() {
    
     return (
         <div className="feed">
+            
             <StoryReel />
             <MessageSender />
+            <Dashboard />
 
             {posts.map((post) => ( 
             <Post 
