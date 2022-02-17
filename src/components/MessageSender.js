@@ -8,7 +8,7 @@ import { useStateValue } from './StateProvider';
 
 
 function MessageSender() {
-    const [{ user }, dispatch] = useStateValue();
+    const [ user ] = useStateValue();
     const[input, setInput] =useState("");
     const[imageUrl, setImageUrl] =useState("");
 
@@ -24,7 +24,7 @@ function MessageSender() {
   return (
         <div className="messageSender">
             <div className="messageSender__top">
-                <Avatar src={user.photoURL}/>
+                <Avatar src={user.imageURL}/>
                     <form>
                         <input 
                         value={input}

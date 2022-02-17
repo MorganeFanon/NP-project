@@ -49,7 +49,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { auth, signInWithEmailAndPassword, signInWithGoogle } from "../firebase";
 import "./Login.css";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { sendPasswordResetEmail } from "../firebase";
+// import { sendPasswordResetEmail } from "../firebase";
 
 
 function Login() {

@@ -10,26 +10,24 @@ import Dashboard from '../components/Dashboard';
 
 
 function Feed() {
-    const [posts, setPosts] = useState([]);
+    // const [posts, setPosts] = useState([]);
 
-    useEffect(() => {
-        db.collection("posts").onSnapshot((snapshot) =>
-        setPosts(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() })))
-        );
-    }, []);
+    // useEffect(() => {
+    //     db.collection("posts").onSnapshot((snapshot) =>
+    //     setPosts(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() })))
+    //     );
+    // }, []);
    
     return (
         
         
         <div className="feed">
+            <>
         <Dashboard />
         <StoryReel />
-        <MessageSender />
-   
-      
-            
-           
-            
+        </>
+        </div>
+        /* <MessageSender />
 
          {posts.map((post) => ( 
          <Post 
@@ -40,8 +38,8 @@ function Feed() {
             username={post.username}
             image={post.image}
                 />
-            ))} 
-        </div>
+            ))}  */
+            
     );
 }
 

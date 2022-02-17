@@ -5,11 +5,11 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import Reset from './Pages/Reset';
 import Feed from './Pages/Feed';
-// import { useStateValue } from './components/StateProvider';
+import { useStateValue } from './components/StateProvider';
 
 
 function App() {
-// const [{ user }, dispatch] = useStateValue();
+const [{ user }, dispatch] = useStateValue();
 
 
   return (
