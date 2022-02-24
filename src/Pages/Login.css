@@ -1,14 +1,32 @@
-/* .login {
+.login {
     display: grid;
     place-items: center;
     height: 100vh;
 }
 
+h1 {
+    color: white;
+    padding: 140px;
+    font-family: Arial;
+    text-align: center;
+  }
+@font-face {
+    font-family: "Elephant";
+    src: url('../Fonts/Elephant.TTF')
+}
+
 .login > button {
+    height: 200px;
     width: 300px;
-    background-color: grey;
+    box-shadow: 10px 10px 8px #888888;
+    background-image: url('../Assets/wood.jfif');
     color: wheat;
-    font-weight: 800;
+    font-family: "Elephant";
+    font-size: 50px;
+    border-radius: 23px;
+}
+.button:hover {
+    transform: scale(2);     /* Equal to scaleX(2) scaleY(2) */
 }
 
 .login > button:hover {
@@ -25,38 +43,4 @@
 .login > div {
     display: flex;
     flex-direction: column;
-} */
-
-.login {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .login__container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #dcdcdc;
-    padding: 30px;
-  }
-  .login__textBox {
-    padding: 10px;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  .login__btn {
-    padding: 10px;
-    font-size: 18px;
-    margin-bottom: 10px;
-    border: none;
-    color: white;
-    background-color: black;
-  }
-  .login__google {
-    background-color: #4285f4;
-  }
-  .login div {
-    margin-top: 7px;
-  }
+}

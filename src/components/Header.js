@@ -42,7 +42,6 @@ const [{ user }, dispatch] = useStateValue();
         <Avatar src={user.photoURL}/>
         <h4>{user.displayName}</h4>
       </IconButton>
-        
       </div>
 
       

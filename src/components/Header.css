@@ -3,7 +3,7 @@
     padding: 15px 20px;
     justify-content: space-between;
     position: sticky;
-    background-color: pink;
+    background-image: url('../Assets/wood.jfif');
     z-index: 100;
     box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0)
 }
@@ -12,6 +12,7 @@
     height: 70px;
     border-radius: 33px;
 }
+
 
 
 

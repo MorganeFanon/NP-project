@@ -1,10 +1,9 @@
-.app {
-  background-color: #f1f2f5;
+.container {
+  background-image: url(./Assets/tartan.jpg);
   height: 100vh;
 }
 
 
-
-
-
-
+.app__body {
+  display: flex;
+} 

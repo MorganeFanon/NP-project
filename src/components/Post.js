@@ -8,7 +8,7 @@ import { ExpandMoreOutlined } from '@material-ui/icons';
 import './Post.css';
 
 
-function Post({profilePic, image, username, timestamp, message}) {
+function Post({ profilePic, image, username, timestamp, message }) {
   return (
     <div className="post">
       <div className="post__top">
@@ -17,7 +17,7 @@ function Post({profilePic, image, username, timestamp, message}) {
               <h3>{username}</h3>
               <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
           </div>  
-    </div>
+      </div>
 
     <div className="post__bottom">
         <p>{message}</p>
