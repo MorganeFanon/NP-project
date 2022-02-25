@@ -11,8 +11,8 @@ h1 {
     text-align: center;
   }
 @font-face {
-    font-family: "Elephant";
-    src: url('../Fonts/Elephant.TTF')
+    font-family: "Cooper";
+    src: url('../Fonts/COOPBL.TTF')
 }
 
 .login > button {
@@ -21,7 +21,7 @@ h1 {
     box-shadow: 10px 10px 8px #888888;
     background-image: url('../Assets/wood.jfif');
     color: wheat;
-    font-family: "Elephant";
+    font-family: "Cooper";
     font-size: 50px;
     border-radius: 23px;
 }
@@ -34,14 +34,35 @@ h1 {
     color: black;
 }
 
-.login > div > img {
-    object-fit: contain;
-    height: 150px;
-    border-radius: 30px;
-}
+
 
 .login > div {
     display: flex;
     flex-direction: column;
 }
 
+.carousel__wrapper{
+    border-radius: 5px;
+	box-shadow: 0 1rem 2rem rgba(purple, .2);
+	margin: 2rem auto;
+	overflow: hidden;
+	width: 400px;
+}
+
+
+.carousel__container {
+	display: flex;
+	height: 300px;
+    width: 500px;
+	position: relative;
+	overflow: hidden;
+}
+
+/* .carousel__items {
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	top: 0;
+	transform: scale(1.1);
+	transition: all .15s ease-out;
+} */

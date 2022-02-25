@@ -34,11 +34,13 @@ function CarouselComponent(props)
     ]
 
     return (
-        <Carousel>
-            {
-                items.map( (item, i) => <Item key={i} item={item} /> )
-            }
-        </Carousel>
+
+            <Carousel>
+                {
+                    items.map( (item, i) => <Item key={i} item={item} /> )
+                }
+           </Carousel>
+        
     )
 }
 
