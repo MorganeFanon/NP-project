@@ -1,14 +1,16 @@
 .login {
     display: grid;
     place-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
-h1 {
-    color: white;
-    padding: 140px;
-    font-family: Arial;
+h1 {font-family: "Cooper";
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 12vw;
+    color: cadetblue;
     text-align: center;
+    padding: 4vw;
   }
 @font-face {
     font-family: "Cooper";
@@ -16,13 +18,13 @@ h1 {
 }
 
 .login > button {
-    height: 200px;
-    width: 300px;
+    /* height: 20%; */
+    width: 30%;
     box-shadow: 10px 10px 8px #888888;
     background-image: url('../Assets/wood.jfif');
     color: wheat;
     font-family: "Cooper";
-    font-size: 50px;
+    font-size: 4vw;
     border-radius: 23px;
 }
 .button:hover {
@@ -31,31 +33,28 @@ h1 {
 
 .login > button:hover {
     background-color: white;
-    color: black;
+    color: grey;
 }
-
-
 
 .login > div {
     display: flex;
     flex-direction: column;
 }
 
-.carousel__wrapper{
+/* .carousel__wrapper{
     border-radius: 5px;
 	box-shadow: 0 1rem 2rem rgba(purple, .2);
 	margin: 2rem auto;
 	overflow: hidden;
 	width: 400px;
-}
+} */
 
 
 .carousel__container {
 	display: flex;
-	height: 300px;
-    width: 500px;
 	position: relative;
 	overflow: hidden;
+    width: 50%;
 }
 
 /* .carousel__items {

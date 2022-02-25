@@ -26,12 +26,12 @@ function Login() {
     };
     return ( 
     <div className="login">
-        <div className="carousel__wrapper">
+        {/* <div className="carousel__wrapper"> */}
             <div className="carousel__container">
                 <CarouselComponent />
             </div>
-            </div>
-        <h1>Granbook</h1>
+            {/* </div> */}
+        <h1>Granbook</h1>   
         
         <Button size="large"type="submit" onClick={signIn}>
             Sign In
