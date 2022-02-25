@@ -7,6 +7,8 @@ import Feed from './Pages/Feed';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import { useStateValue } from "./components/StateProvider";
+import CarouselComponent from './components/CarouselComponent';
+
 
 
 function App() {
@@ -14,12 +16,16 @@ function App() {
   return (
     <div className="container">
       {!user ? (
-        
+        <div>
+       
         <Login />
+        </div>
        ) : ( 
          <> 
       <Header />
       <div className="app__body">
+       <CarouselComponent />
+
         <Sidebar />
         <Feed />
         {/* <Widgets /> */}
