@@ -1,6 +1,11 @@
 .container {
   background-image: url(./Assets/tartan.jpg);
-  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  align-items: center;
+  background-position: center;
+  display: flex;
 }
 
 
