@@ -6,6 +6,9 @@ import { actionTypes } from '../components/reducer';
 import { useStateValue } from '../components/StateProvider';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CarouselComponent from '../components/CarouselComponent';
+import { register } from './Register';
+import { useNavigate } from "react-router-dom";
+
 
 
 
@@ -13,6 +16,9 @@ import CarouselComponent from '../components/CarouselComponent';
 function Login() {
     const [state, dispatch] = useStateValue();
    
+
+    const register = () => { let path = `newPath`; 
+    navigate(path);}
     const signIn = () => {
 
         auth
