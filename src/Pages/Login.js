@@ -9,6 +9,7 @@ import CarouselComponent from '../components/CarouselComponent';
 
 
 
+
 function Login() {
     const [state, dispatch] = useStateValue();
    
@@ -36,6 +37,10 @@ function Login() {
         <Button size="large"type="submit" onClick={signIn}>
             Sign In
         </Button>
+
+        <button className="register__btn" onClick={register}>
+          Register
+        </button>
     </div>
     );
 }
