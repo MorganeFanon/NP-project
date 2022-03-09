@@ -17,8 +17,6 @@ function Login() {
     const [state, dispatch] = useStateValue();
    
 
-    const register = () => { let path = `newPath`; 
-    navigate(path);}
     const signIn = () => {
 
         auth

@@ -9,9 +9,7 @@ function SidebarRow({ src, Icon, title }) {
             {Icon && <Icon />}
 
             <h4>{title}</h4>
-            <button className="register__btn" onClick={logout}>
-          Log Out
-        </button>
+        
         </div>
     );
 }
